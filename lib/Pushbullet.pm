@@ -213,7 +213,9 @@ sub pushIt {
   $req->content ( $content );
   my $res = $self->{ua}->request( $req );
   if (!$res->is_success) {
-    print "Error [" . $res->status_line . "]\n";
+    print STDERR "Error [" . $res->status_line . "]\n";
+  } else {
+    print "DEBUG: [" . $res->status_line . "] " . $data->{type} . " pushed successfully.\n" if ($self->{debug});
   }
 }
 
