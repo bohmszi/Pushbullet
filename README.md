@@ -3,9 +3,9 @@
 Push messages/links/files to your devices from CLI or scripts using [Pushbullet](https://www.pushbullet.com/).
 
 ## Required perl modules
-* `JSON`
-* `HTTP::Request`
-* `LWP::UserAgent`
+* `JSON` (apt package: libjson-perl)
+* `HTTP::Request` (apt package: libhttp-parser-perl)
+* `LWP::UserAgent` (apt package: libhtml-form-perl)
 
 ## Setup
 
